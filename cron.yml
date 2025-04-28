@@ -1,0 +1,3 @@
+schedule:
+  - cron: "*/2 * * * *"  # Menjalankan setiap 2 menit
+    command: "python3 notion_to_telegram.py"  # Path script yang akan dijalankan
