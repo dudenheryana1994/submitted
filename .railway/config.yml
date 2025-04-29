@@ -1,1 +1,9 @@
+services:
+  send-approval-to-telegram:
+    source: .
+    buildCommand: pip install -r requirements.txt
+    startCommand: python notion_to_telegram.py
+    schedules:
+      - cron: "*/2 * * * *" # Setiap 2 menit
+        command: python notion_to_telegram.py
 
